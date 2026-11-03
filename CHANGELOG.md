@@ -1,5 +1,6 @@
 # Artha-Vāstu changelog
 
+- 2026-11-03 (second run): No data change. Searches for India and all seven cities returned no dated stories from the last 7 days that I could open and verify, so no news rows were added. IN-DEBT-REPO unchanged at 5.50% and IN-DEBT-GSEC unchanged at 7.30% (Trading Economics, 3 Nov). No newer quarterly reports found. Edition left at 2026-11-03T18:00 because the run clock (12:59 IST) sorts earlier.
 - 2026-11-03: IN-DEBT-GSEC base 7.15 to 7.30, high 7.30 to 7.50 (10Y yield 7.30% on 3 Nov; Trading Economics); trend in-gsec 2026-11 added.
 - 2026-11-03: IN-DEBT-REPO unchanged at 5.50% (no new MPC decision).
 - 2026-11-03: News N30 (Anarock-FICCI PE flows, Construction World) and N31 (Knight Frank PE investment, Policy Circle) added.
