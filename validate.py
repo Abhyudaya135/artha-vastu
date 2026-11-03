@@ -24,4 +24,28 @@ for r in d.get("assumptions", []):
 for n in d.get("news", []):
     if not str(n.get("url","")).startswith("http"): err.append(f"news {n.get('news_id')} needs a real URL")
 if len(d.get("assumptions", [])) < 140: err.append("assumptions shrank below 140 rows; refusing")
-print("\n".join(err) if err else "OK"); sys.exit(1 if err else 0)
+print("\n".join(err) if err else "OK")
+if err: sys.exit(1)
+
+# ---- extension file: markets, regulations, approvals ----
+import os
+if os.path.exists("artha-vastu-ext.json"):
+    e = json.load(open("artha-vastu-ext.json", encoding="utf-8"))
+    err2 = []
+    for k in ["markets", "assumptions_extra", "reg_documents", "regulations", "reg_updates", "approvals", "approval_docs", "jurisdictions"]:
+        if not isinstance(e.get(k), list) or not e[k]: err2.append(f"ext: {k} missing or empty")
+    if not re.match(r"^\d{4}-\d{2}-\d{2}", str(e.get("edition", ""))): err2.append("ext: edition must start YYYY-MM-DD")
+    for k, key in [("reg_documents", "doc_id"), ("regulations", "reg_id"), ("reg_updates", "upd_id"), ("approvals", "key"), ("approval_docs", "doc_key")]:
+        ids = [r.get(key) for r in e.get(k, [])]
+        if len(ids) != len(set(ids)): err2.append(f"ext: duplicate {key} in {k}")
+    docs = {d["doc_id"] for d in e.get("reg_documents", [])}
+    for r in e.get("regulations", []):
+        if r.get("doc_id") not in docs: err2.append(f"ext: regulation {r.get('reg_id')} points to unknown document")
+        if not str(r.get("url", "")).startswith("http"): err2.append(f"ext: regulation {r.get('reg_id')} needs a source URL")
+    keys = {a["key"] for a in e.get("approvals", [])}
+    for a in e.get("approvals", []):
+        for d in filter(None, a.get("depends_on", "").split(",")):
+            if f"{a['jid']}:{d}" not in keys: err2.append(f"ext: {a['key']} depends on unknown {d}")
+    if err2:
+        print("\n".join(err2)); sys.exit(1)
+    print("EXT OK")
