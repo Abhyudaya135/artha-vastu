@@ -1,0 +1,32 @@
+name: Publish daily refresh
+on:
+  push:
+    branches: ['claude/**']
+permissions:
+  contents: write
+  pages: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Copy the refreshed data into main
+        env:
+          BR: ${{ github.ref_name }}
+        run: |
+          git config user.name "artha-vastu-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout main
+          git checkout "origin/$BR" -- artha-vastu-data.json CHANGELOG.md
+          python3 validate.py
+          git add artha-vastu-data.json CHANGELOG.md
+          git diff --cached --quiet && echo "No changes" || git commit -m "Daily refresh (from $BR)"
+          git push origin main
+          git push origin --delete "$BR"
+      - name: Rebuild the site
+        run: |
+          curl -s -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds"
