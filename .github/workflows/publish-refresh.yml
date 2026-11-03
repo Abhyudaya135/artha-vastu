@@ -20,8 +20,10 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git checkout main
           git checkout "origin/$BR" -- artha-vastu-data.json CHANGELOG.md
+          git checkout "origin/$BR" -- artha-vastu-ext.json 2>/dev/null || true
           python3 validate.py
           git add artha-vastu-data.json CHANGELOG.md
+          [ -f artha-vastu-ext.json ] && git add artha-vastu-ext.json
           git diff --cached --quiet && echo "No changes" || git commit -m "Daily refresh (from $BR)"
           git push origin main
           git push origin --delete "$BR"
