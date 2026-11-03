@@ -1,3 +1,6 @@
 # Artha-Vāstu changelog
 
+- 2026-11-03: IN-DEBT-GSEC base 7.15 to 7.30, high 7.30 to 7.50 (10Y yield 7.30% on 3 Nov; Trading Economics); trend in-gsec 2026-11 added.
+- 2026-11-03: IN-DEBT-REPO unchanged at 5.50% (no new MPC decision).
+- 2026-11-03: News N30 (Anarock-FICCI PE flows, Construction World) and N31 (Knight Frank PE investment, Policy Circle) added.
 - 2026-11-02: Initial edition (research snapshot of 27 Oct 2026): 152 assumptions, 25 deals, 165 trend points, 29 news stories.
