@@ -1,5 +1,7 @@
 # Artha-Vāstu changelog
 
+- 2026-11-05: IN-DEBT-GSEC base 7.30 to 7.25 (10Y yield 7.25% on 4 Nov; Trading Economics); trend in-gsec 2026-11 updated to 7.25.
+- 2026-11-05: IN-DEBT-REPO unchanged at 5.50%. No news rows added: searches for India and all seven cities returned no dated stories from the last 7 days that I could open and verify. No newer quarterly reports or deals found.
 - 2026-11-04: No data change. Searches for India and all seven cities returned no dated stories from the last 7 days that could be opened and verified, so no news rows were added. IN-DEBT-REPO unchanged at 5.50% and IN-DEBT-GSEC base kept at 7.30% (Trading Economics 7.33%, 3 Nov). No newer quarterly reports or deals found. Edition bumped only.
 - 2026-11-03 (third run): News N32 (Mumbai October registrations, Tribune/ANI), N33 (Embassy REIT Q2 FY27, Bengaluru, The Wire) and N34 (Mindspace REIT Q2 FY27, Chennai, Investing.com) added. IN-DEBT-REPO unchanged at 5.50% and IN-DEBT-GSEC unchanged at 7.30% (Trading Economics 7.31%, 3 Nov). No assumption, deal or trend changes; no newer quarterly figures verified. Other cities returned no dated stories from the last 7 days.
 - 2026-11-03 (second run): No data change. Searches for India and all seven cities returned no dated stories from the last 7 days that I could open and verify, so no news rows were added. IN-DEBT-REPO unchanged at 5.50% and IN-DEBT-GSEC unchanged at 7.30% (Trading Economics, 3 Nov). No newer quarterly reports found. Edition left at 2026-11-03T18:00 because the run clock (12:59 IST) sorts earlier.
