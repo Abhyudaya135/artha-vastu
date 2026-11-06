@@ -1,5 +1,6 @@
 # Artha-Vāstu changelog
 
+- 2026-11-06: IN-DEBT-GSEC base 7.25 to 7.12 (10Y yield 7.12% on 5 Nov; Trading Economics); trend in-gsec 2026-11 updated to 7.12. IN-DEBT-REPO unchanged at 5.50%. No news rows added: searches for India and all seven cities returned no dated stories from the last 7 days that could be opened and verified. No newer quarterly reports or deals found.
 - 2026-11-05: IN-DEBT-GSEC base 7.30 to 7.25 (10Y yield 7.25% on 4 Nov; Trading Economics); trend in-gsec 2026-11 updated to 7.25.
 - 2026-11-05: IN-DEBT-REPO unchanged at 5.50%. No news rows added: searches for India and all seven cities returned no dated stories from the last 7 days that I could open and verify. No newer quarterly reports or deals found.
 - 2026-11-04: No data change. Searches for India and all seven cities returned no dated stories from the last 7 days that could be opened and verified, so no news rows were added. IN-DEBT-REPO unchanged at 5.50% and IN-DEBT-GSEC base kept at 7.30% (Trading Economics 7.33%, 3 Nov). No newer quarterly reports or deals found. Edition bumped only.
