@@ -1,5 +1,8 @@
 # Artha-Vāstu changelog
 
+- 2026-11-17: IN-DEBT-GSEC base 7.31 to 7.34 (10Y yield about 7.34% on 16 Nov; Trading Economics); trend in-gsec 2026-11 updated to 7.34. IN-DEBT-REPO unchanged at 5.50% (next MPC 2-4 Dec).
+- 2026-11-17: Deal D28 added: Swiggy at Sumadhura Capitol Towers, Whitefield, 2.62 lakh sq ft chargeable at ₹68 per sq ft a month, 10 years, 15% every 3 years (PropTech Pulse, Propstack documents).
+- 2026-11-17: News N107-N120 added: Savills cross-border investment (national), Swiggy Whitefield lease and Khopoli SPRE township (Bengaluru, Mumbai) - PropTech Pulse; CBRE quick-commerce logistics (national), Navi Mumbai cluster redevelopment dispute (Mumbai), Max Estates The Bungalows and NBCC Sarojini Nagar re-auction (Delhi NCR), Mars-Genpact centre (Hyderabad), Holkarwadi TP schemes (Pune), Chennai approvals backlog (Chennai), NBCC College Street/Tangra MoU (Kolkata) - all PropNewsTime; Address Maker-Skylark Kodigehalli and K-RERA overdue projects (Bengaluru), KW Group Indirapuram land (Delhi NCR) - Construction World. N01, N12, N17, N30-N35, N40-N44 dropped to keep 80 rows. No newer quarterly reports found; no other assumption or trend changes.
 - 2026-11-15: IN-WH-VAC base 11.4 to 11.5%, as_of Q3 2026; trend in-whv 2026-09 added at 11.5 (Knight Frank India Warehousing Market Report Q3 2026, via Construction World).
 - 2026-11-15: IN-WH-RENT high 28.7 to 28.9 (Pune), as_of Q3 2026 (Knight Frank India Warehousing Market Report Q3 2026, via Construction World).
 - 2026-11-15: MUM-WH-RENT base 26.0 to 26.2, band 23.6-28.8, as_of Q3 2026 (Knight Frank India Warehousing Market Report Q3 2026, via Construction World).
